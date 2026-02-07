@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
             border-radius: 12px;
             padding: 50px 60px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9),
-                        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
             border: 3px solid #CC0000;
         }
 
@@ -43,7 +44,7 @@
             font-size: 3em;
             margin-bottom: 15px;
             text-shadow: 0 0 20px rgba(204, 0, 0, 0.6),
-                         0 0 10px rgba(204, 0, 0, 0.4);
+                0 0 10px rgba(204, 0, 0, 0.4);
             font-weight: bold;
         }
 
@@ -58,6 +59,7 @@
             h1 {
                 font-size: 3.5em;
             }
+
             .subtitle {
                 font-size: 1.5em;
             }
@@ -91,7 +93,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .tree {
@@ -122,6 +126,7 @@
             .tree {
                 font-size: 18px;
             }
+
             .tree-root {
                 font-size: 1.6em;
             }
@@ -274,12 +279,15 @@
                 grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
                 gap: 30px;
             }
+
             .leaderboard-card {
                 padding: 30px;
             }
+
             .leaderboard-title {
                 font-size: 1.7em;
             }
+
             .leaderboard-item {
                 padding: 12px 18px;
                 font-size: 1.1em;
@@ -432,16 +440,20 @@
             .race-title {
                 font-size: 3em;
             }
+
             .racer-info {
                 min-width: 300px;
             }
+
             .racer-avatar {
                 width: 56px;
                 height: 56px;
             }
+
             .racer-name {
                 font-size: 1.2em;
             }
+
             .race-bar-container {
                 height: 56px;
             }
@@ -478,7 +490,9 @@
         }
 
         @keyframes shine {
-            to { left: 200%; }
+            to {
+                left: 200%;
+            }
         }
 
         .race-bar.first {
@@ -512,16 +526,28 @@
             .race-value {
                 font-size: 1.1em;
             }
+
             .race-position {
                 font-size: 2em;
                 min-width: 60px;
             }
         }
 
-        .race-position.first { color: #ff3333; }
-        .race-position.second { color: #dd0000; }
-        .race-position.third { color: #bb0000; }
-        .race-position.other { color: #808080; }
+        .race-position.first {
+            color: #ff3333;
+        }
+
+        .race-position.second {
+            color: #dd0000;
+        }
+
+        .race-position.third {
+            color: #bb0000;
+        }
+
+        .race-position.other {
+            color: #808080;
+        }
 
         .race-tabs {
             display: flex;
@@ -590,9 +616,11 @@
             .special-prize-section {
                 padding: 40px;
             }
+
             .special-prize-title {
                 font-size: 2.4em;
             }
+
             .special-prize-subtitle {
                 font-size: 1.2em;
             }
@@ -862,6 +890,7 @@
                 padding: 50px;
                 margin-top: 60px;
             }
+
             .resources-title {
                 font-size: 3em;
             }
@@ -1031,6 +1060,7 @@
                 padding: 50px;
                 margin-top: 60px;
             }
+
             .rules-title {
                 font-size: 3em;
             }
@@ -1196,6 +1226,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>🎯 BeagleBadge Hackathon 2026 🎯</h1>
@@ -1213,85 +1244,87 @@
                 <div class="race-section">
                     <div class="race-title">🏁 The Race is ON! 🏁</div>
                     <div class="race-tabs">
-                        <button class="race-tab" onclick="switchRace('stars')">⭐ Stars Race</button>
-                        <button class="race-tab active" onclick="switchRace('code')">📝 Code Race</button>
+                        <button class="race-tab active" onclick="switchRace('stars')">⭐ Stars Race</button>
+                        <button class="race-tab" onclick="switchRace('code')">📝 Code Race</button>
                     </div>
                     <div class="race-track" id="race-track"></div>
                 </div>
 
                 <div class="special-prize-section">
-                <div class="special-prize-title">🏆 Special Prize Category 🏆</div>
-                <div class="special-prize-subtitle">Core Repository Contributions</div>
+                    <div class="special-prize-title">🏆 Special Prize Category 🏆</div>
+                    <div class="special-prize-subtitle">Core Repository Contributions</div>
 
-                <div class="special-prize-grid">
-                    <div class="special-prize-card">
-                        <div class="special-prize-card-header">
-                            <span class="special-prize-icon">📦</span>
-                            <div>
-                                <div class="special-prize-card-title">Badge App Store</div>
-                                <a href="https://github.com/Grippy98/badge-app-store" target="_blank" class="special-prize-link">View Repository →</a>
+                    <div class="special-prize-grid">
+                        <div class="special-prize-card">
+                            <div class="special-prize-card-header">
+                                <span class="special-prize-icon">📦</span>
+                                <div>
+                                    <div class="special-prize-card-title">Badge App Store</div>
+                                    <a href="https://github.com/Grippy98/badge-app-store" target="_blank"
+                                        class="special-prize-link">View Repository →</a>
+                                </div>
+                            </div>
+                            <div class="special-prize-stats">
+                                <div class="special-prize-stat">
+                                    <div class="special-prize-stat-label">Unique PR Contributors</div>
+                                    <div class="special-prize-stat-value" id="app-store-contributors">
+                                        <div class="spinner-small"></div>
+                                    </div>
+                                </div>
+                                <div class="special-prize-stat">
+                                    <div class="special-prize-stat-label">Total Lines of Code</div>
+                                    <div class="special-prize-stat-value" id="app-store-lines">
+                                        <div class="spinner-small"></div>
+                                    </div>
+                                </div>
+                                <div class="special-prize-stat">
+                                    <div class="special-prize-stat-label">Pull Requests</div>
+                                    <div class="special-prize-stat-value" id="app-store-prs">
+                                        <div class="spinner-small"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="special-prize-stats">
-                            <div class="special-prize-stat">
-                                <div class="special-prize-stat-label">Unique PR Contributors</div>
-                                <div class="special-prize-stat-value" id="app-store-contributors">
-                                    <div class="spinner-small"></div>
+
+                        <div class="special-prize-card">
+                            <div class="special-prize-card-header">
+                                <span class="special-prize-icon">🛠️</span>
+                                <div>
+                                    <div class="special-prize-card-title">Badge Development</div>
+                                    <a href="https://github.com/Grippy98/badge-slop/tree/linux-wip" target="_blank"
+                                        class="special-prize-link">View Repository →</a>
                                 </div>
                             </div>
-                            <div class="special-prize-stat">
-                                <div class="special-prize-stat-label">Total Lines of Code</div>
-                                <div class="special-prize-stat-value" id="app-store-lines">
-                                    <div class="spinner-small"></div>
+                            <div class="special-prize-stats">
+                                <div class="special-prize-stat">
+                                    <div class="special-prize-stat-label">Unique PR Contributors</div>
+                                    <div class="special-prize-stat-value" id="badge-slop-contributors">
+                                        <div class="spinner-small"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="special-prize-stat">
-                                <div class="special-prize-stat-label">Pull Requests</div>
-                                <div class="special-prize-stat-value" id="app-store-prs">
-                                    <div class="spinner-small"></div>
+                                <div class="special-prize-stat">
+                                    <div class="special-prize-stat-label">Total Lines of Code</div>
+                                    <div class="special-prize-stat-value" id="badge-slop-lines">
+                                        <div class="spinner-small"></div>
+                                    </div>
+                                </div>
+                                <div class="special-prize-stat">
+                                    <div class="special-prize-stat-label">Pull Requests</div>
+                                    <div class="special-prize-stat-value" id="badge-slop-prs">
+                                        <div class="spinner-small"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="special-prize-card">
-                        <div class="special-prize-card-header">
-                            <span class="special-prize-icon">🛠️</span>
-                            <div>
-                                <div class="special-prize-card-title">Badge Development</div>
-                                <a href="https://github.com/Grippy98/badge-slop/tree/linux-wip" target="_blank" class="special-prize-link">View Repository →</a>
-                            </div>
-                        </div>
-                        <div class="special-prize-stats">
-                            <div class="special-prize-stat">
-                                <div class="special-prize-stat-label">Unique PR Contributors</div>
-                                <div class="special-prize-stat-value" id="badge-slop-contributors">
-                                    <div class="spinner-small"></div>
-                                </div>
-                            </div>
-                            <div class="special-prize-stat">
-                                <div class="special-prize-stat-label">Total Lines of Code</div>
-                                <div class="special-prize-stat-value" id="badge-slop-lines">
-                                    <div class="spinner-small"></div>
-                                </div>
-                            </div>
-                            <div class="special-prize-stat">
-                                <div class="special-prize-stat-label">Pull Requests</div>
-                                <div class="special-prize-stat-value" id="badge-slop-prs">
-                                    <div class="spinner-small"></div>
-                                </div>
-                            </div>
+                    <div class="special-prize-contributors" id="special-prize-contributors-list">
+                        <div class="special-prize-contributors-title">🌟 All Contributors 🌟</div>
+                        <div id="all-contributors-grid" class="all-contributors-grid">
+                            <div class="spinner-small"></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="special-prize-contributors" id="special-prize-contributors-list">
-                    <div class="special-prize-contributors-title">🌟 All Contributors 🌟</div>
-                    <div id="all-contributors-grid" class="all-contributors-grid">
-                        <div class="spinner-small"></div>
-                    </div>
-                </div>
-            </div>
             </div>
 
             <div class="tree" id="tree"></div>
@@ -1325,7 +1358,8 @@
                                     <div class="resource-link-desc">Submit your apps here!</div>
                                 </div>
                             </a>
-                            <a href="https://github.com/Grippy98/badge-slop/tree/linux-wip" target="_blank" class="resource-link">
+                            <a href="https://github.com/Grippy98/badge-slop/tree/linux-wip" target="_blank"
+                                class="resource-link">
                                 <span class="resource-link-icon">🛠️</span>
                                 <div class="resource-link-content">
                                     <div class="resource-link-title">Badge Development (linux-wip)</div>
@@ -1366,42 +1400,50 @@
                     <div class="rule-item">
                         <span class="rule-icon">🖥️</span>
                         <div class="rule-text">
-                            <strong>Hardware Constraints:</strong> The app must be able to run within the constraints of the AM62L BeagleBadge – 256MB LPDDR4, 2xA53 Cores, E-Ink
+                            <strong>Hardware Constraints:</strong> The app must be able to run within the constraints of
+                            the AM62L BeagleBadge – 256MB LPDDR4, 2xA53 Cores, E-Ink
                         </div>
                     </div>
 
                     <div class="rule-item">
                         <span class="rule-icon">🔌</span>
                         <div class="rule-text">
-                            <strong>Accessories:</strong> External sensors, USB devices, etc are <strong>ALLOWED</strong> if they can reasonably be connected.
+                            <strong>Accessories:</strong> External sensors, USB devices, etc are
+                            <strong>ALLOWED</strong> if they can reasonably be connected.
                         </div>
                     </div>
 
                     <div class="rule-item">
                         <span class="rule-icon">📦</span>
                         <div class="rule-text">
-                            <strong>Submission:</strong> Applications must be submitted to the <a href="https://github.com/Grippy98/badge-app-store" target="_blank" class="app-store-link">Badge App Store Repo</a> to be counted.
+                            <strong>Submission:</strong> Applications must be submitted to the <a
+                                href="https://github.com/Grippy98/badge-app-store" target="_blank"
+                                class="app-store-link">Badge App Store Repo</a> to be counted.
                         </div>
                     </div>
 
                     <div class="rule-item">
                         <span class="rule-icon">🐧</span>
                         <div class="rule-text">
-                            <strong>Full Debian Access:</strong> Applications are allowed to take advantage of the full Debian Linux distro features running in the background – including APT package manager etc and do not need to be strictly Micropython/LVGL (you can make system calls outside of it)
+                            <strong>Full Debian Access:</strong> Applications are allowed to take advantage of the full
+                            Debian Linux distro features running in the background – including APT package manager etc
+                            and do not need to be strictly Micropython/LVGL (you can make system calls outside of it)
                         </div>
                     </div>
 
                     <div class="rule-item">
                         <span class="rule-icon">🚀</span>
                         <div class="rule-text">
-                            <strong>Launcher Freedom:</strong> Applications can break free of the "Launcher" entirely but must exit cleanly and re-enable the badge launcher upon exiting.
+                            <strong>Launcher Freedom:</strong> Applications can break free of the "Launcher" entirely
+                            but must exit cleanly and re-enable the badge launcher upon exiting.
                         </div>
                     </div>
 
                     <div class="rule-item">
                         <span class="rule-icon">✅</span>
                         <div class="rule-text">
-                            <strong>Content Policy:</strong> Everything must be sufficiently age appropriate and respectful.
+                            <strong>Content Policy:</strong> Everything must be sufficiently age appropriate and
+                            respectful.
                         </div>
                     </div>
                 </div>
@@ -1428,17 +1470,15 @@
     </div>
 
     <script>
-        const apps = [
-            { name: 'weather', repo: 'Grippy98/weather-app' },
-            { name: 'xkcd', repo: 'Grippy98/xkcd-app' },
-            { name: 'smart-meter', repo: 'Grippy98/badge-smart-meter' },
-            { name: 'ev-charging', repo: 'Grippy98/badge-ev-charging' },
-            { name: 'flight-tracker', repo: 'Grippy98/badge-flight-tracker' },
-            { name: 'photos', repo: 'Grippy98/badge-photos' },
-            { name: 'dvd', repo: 'Grippy98/badge-dvd' },
-            { name: 'chiptunez', repo: 'Grippy98/badge-chiptunez' },
-            { name: 'tux-driver', repo: 'Grippy98/badge-tux-driver' }
-        ];
+        let apps = [];
+
+        function cleanRepoUrl(url) {
+            if (!url) return '';
+            // Handle https://github.com/user/repo.git or just user/repo
+            let clean = url.replace('https://github.com/', '').replace('.git', '');
+            if (clean.endsWith('/')) clean = clean.slice(0, -1);
+            return clean;
+        }
 
         async function fetchRepoStats(repo) {
             try {
@@ -1533,10 +1573,16 @@
             const tree = document.getElementById('tree');
             let html = '<div class="tree-root">📦 badge-app-store/</div>';
 
-            // Sort by lines of code (descending) and filter out apps with 0 lines of code
-            const filteredAndSorted = appsWithStats
-                .filter(app => app.stats.linesOfCode > 0)
-                .sort((a, b) => b.stats.linesOfCode - a.stats.linesOfCode);
+            // Sort by latest commit date (most recent first)
+            const filteredAndSorted = [...appsWithStats]
+                .sort((a, b) => {
+                    const dateA = a.stats.latestCommitDate ? new Date(a.stats.latestCommitDate) : new Date(0);
+                    const dateB = b.stats.latestCommitDate ? new Date(b.stats.latestCommitDate) : new Date(0);
+                    return dateB - dateA;
+                });
+
+            // Log for debugging if needed
+            console.log('Tree sorted by recency:', filteredAndSorted.map(a => `${a.name}: ${a.stats.latestCommitDate}`));
 
             filteredAndSorted.forEach((app, index) => {
                 const isLast = index === filteredAndSorted.length - 1;
@@ -1622,7 +1668,18 @@
         }
 
         let globalAppsData = [];
-        let currentRaceType = 'code';
+        let currentRaceType = 'stars';
+
+        function getFilteredApps(appsWithStats) {
+            // Filter logic: Only show top 2 most starred apps for Grippy98
+            const grippy98Apps = appsWithStats.filter(app => app.stats.owner?.username === 'Grippy98');
+            const otherApps = appsWithStats.filter(app => app.stats.owner?.username !== 'Grippy98');
+            const topGrippy98 = [...grippy98Apps]
+                .sort((a, b) => b.stats.stars - a.stats.stars)
+                .slice(0, 2);
+
+            return [...otherApps, ...topGrippy98];
+        }
 
         function renderRace(appsWithStats, type) {
             const track = document.getElementById('race-track');
@@ -1630,7 +1687,7 @@
             let emoji;
             let unit;
 
-            switch(type) {
+            switch (type) {
                 case 'stars':
                     sortedApps = [...appsWithStats]
                         .filter(app => app.stats.stars > 0)
@@ -1720,11 +1777,22 @@
 
             // Update active tab
             document.querySelectorAll('.race-tab').forEach(tab => tab.classList.remove('active'));
-            event.target.classList.add('active');
+            // Use event if available, or find button by text
+            if (event && event.target) {
+                event.target.classList.add('active');
+            } else {
+                const tabs = document.querySelectorAll('.race-tab');
+                tabs.forEach(tab => {
+                    if (tab.textContent.toLowerCase().includes(type)) {
+                        tab.classList.add('active');
+                    }
+                });
+            }
 
             // Render race
             if (globalAppsData.length > 0) {
-                renderRace(globalAppsData, type);
+                const filteredApps = getFilteredApps(globalAppsData);
+                renderRace(filteredApps, type);
             }
         }
 
@@ -1916,16 +1984,23 @@
             } catch (error) {
                 console.error('Error loading special prize stats:', error);
                 ['app-store-contributors', 'app-store-lines', 'app-store-prs',
-                 'badge-slop-contributors', 'badge-slop-lines', 'badge-slop-prs'].forEach(id => {
-                    document.getElementById(id).textContent = 'Error';
-                });
+                    'badge-slop-contributors', 'badge-slop-lines', 'badge-slop-prs'].forEach(id => {
+                        document.getElementById(id).textContent = 'Error';
+                    });
             }
         }
 
         async function loadAllStats() {
             try {
-                // Load special prize stats in parallel
-                loadSpecialPrizeStats();
+                // Fetch the manifest to get the list of apps
+                const manifestResponse = await fetch('https://raw.githubusercontent.com/Grippy98/badge-app-store/master/manifest.json');
+                if (!manifestResponse.ok) throw new Error('Failed to fetch manifest');
+                const manifestData = await manifestResponse.json();
+
+                apps = manifestData.apps.map(app => ({
+                    name: app.name,
+                    repo: cleanRepoUrl(app.repo)
+                }));
 
                 const appsWithStats = await Promise.all(
                     apps.map(async (app) => ({
@@ -1936,13 +2011,14 @@
                 );
 
                 globalAppsData = appsWithStats;
+                const filteredApps = getFilteredApps(appsWithStats);
 
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
 
                 renderTree(appsWithStats);
-                renderRace(appsWithStats, currentRaceType);
-                renderLeaderboards(appsWithStats);
+                renderRace(filteredApps, currentRaceType);
+                renderLeaderboards(filteredApps);
 
                 // Check for errors
                 const errors = appsWithStats.filter(app => app.stats.error);
@@ -1974,4 +2050,5 @@
         loadAllStats();
     </script>
 </body>
+
 </html>

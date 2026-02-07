@@ -1535,15 +1535,29 @@
         }
 
         async function fetchRepoDetails(repo, basicStats) {
-            // These calls are still per-repo but we can make them conditional or optional
-            // For now, let's keep them limited.
             try {
-                // Fetch contributors only if we really need the list
-                const contributorsResponse = await fetch(`https://api.github.com/repos/${repo}/contributors`);
+                // Fetch contributors
+                const contributorsPromise = fetch(`https://api.github.com/repos/${repo}/contributors`);
+                // Fetch languages for more accurate line counting
+                const languagesPromise = fetch(`https://api.github.com/repos/${repo}/languages`);
+
+                const [contributorsResponse, languagesResponse] = await Promise.all([
+                    contributorsPromise,
+                    languagesPromise
+                ]);
+
                 const contributorsData = contributorsResponse.ok ? await contributorsResponse.json() : [];
+                const languagesData = languagesResponse.ok ? await languagesResponse.json() : {};
+
+                // Calculate accurate lines from languages (industry standard estimation)
+                const totalCodeBytes = Object.values(languagesData).reduce((sum, bytes) => sum + bytes, 0);
+                const accurateLines = totalCodeBytes > 0
+                    ? Math.round(totalCodeBytes / 40) // 40 bytes per line is more accurate for these Python apps
+                    : basicStats.linesOfCode; // Fallback to basic if languages fail
 
                 return {
                     ...basicStats,
+                    linesOfCode: accurateLines,
                     contributors: Array.isArray(contributorsData) ? contributorsData.length : 0,
                     contributorsList: contributorsData.slice(0, 3).map(c => ({
                         username: c.login,
